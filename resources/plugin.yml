@@ -2,5 +2,5 @@ name: kRTP
 main: ru.main.addon.Main
 version: 2.2
 commands:
-  prtp:
+  krtp:
     description: "Рандомная телепортация к игрокам" # нет блин к мамонтам
