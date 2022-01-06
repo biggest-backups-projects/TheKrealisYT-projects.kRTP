@@ -1,7 +1,7 @@
-package ru.main.addon.utils;
+package ru.main.rtp.utils;
 
 import org.bukkit.*;
-import ru.main.addon.*;
+import ru.main.rtp.*;
 
 /**
  * @Copyright © 2021 TheKrealisYT or Exept.
