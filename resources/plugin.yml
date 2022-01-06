@@ -1,0 +1,6 @@
+name: kRTP
+main: ru.main.addon.Main
+version: 2.0
+commands:
+  prtp:
+    description: Random Teleport to players.
