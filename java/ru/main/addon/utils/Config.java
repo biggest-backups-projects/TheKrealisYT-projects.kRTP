@@ -9,7 +9,6 @@ import org.bukkit.configuration.file.*;
  * @Author source code: @naulbimix. All rights reserved. Please telegram @naulbimix for usage rights and other information.
  */
 
-
 public class Config {
 
     private static FileConfiguration config;
@@ -33,7 +32,7 @@ public class Config {
             return save(YamlConfiguration.loadConfiguration(file), fileName);
 
         if (!file.exists())
-            Logger.info("File not fond. Createing new file   " + fileName + "..."); // "Createing" :D
+            Logger.info("File not fond. Creating new file " + fileName + "...");
             Main.getInstance().saveResource(fileName, false);
 
         return YamlConfiguration.loadConfiguration(file);

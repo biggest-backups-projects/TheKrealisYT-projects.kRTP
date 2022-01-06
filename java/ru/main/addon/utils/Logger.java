@@ -8,7 +8,6 @@ import ru.main.addon.*;
  * @Author source code: @naulbimix. All rights reserved. Please telegram @naulbimix for usage rights and other information.
  */
 
-
 public class Logger {
 
     public static void info(String text) {
@@ -22,6 +21,5 @@ public class Logger {
     public static void error(String text) {
         Bukkit.getConsoleSender().sendMessage("§e(" + Main.getInstance().getDescription().getName() + "/ERROR) " + text);
     }
-
 
 }

